@@ -3,6 +3,9 @@ import streamlit as st
 import os
 from modules.theme import render_header, render_kpis
 
+os.makedirs('data', exist_ok=True)
+os.makedirs('output', exist_ok=True)
+
 st.set_page_config(page_title='学规数据分析', page_icon='📊', layout='wide')
 render_header('学规数据分析系统', '每日数据监控平台')
 
